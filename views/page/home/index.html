@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Akaya Kanadaka' rel='stylesheet'>
+    <link rel="stylesheet" href="select-style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Home Page</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img class="img" src="https://i0.wp.com/saopaulo.wordcamp.org/2018/files/2018/09/vizir-e1538068358594.png?fit=884%2C368&ssl=1" alt="">
+    </header>
+    <main>
+      <div class="center">
+        <div class="form">
+          <div class="row">
+            <div class="table">
+              <span class="table-title"> Origem </span>
+            </div>
+            <div class="table">
+              <span class="table-title"> Destino </span>
+            </div>
+            <div class="table">
+              <span class="table-title"> Minutos </span>
+            </div>
+            <div class="table">
+              <span class="table-title"> Plano </span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="table">
+              <select id="origem" class="select-css" aria-label="Default select example">
+                <option selected value="11">011</option>
+                <option value="16">016</option>
+                <option value="17">017</option>
+                <option value="18">018</option>
+            </select>
+            </div>
+            <div class="table">
+              <select id="destination" class="select-css" aria-label="Default select example">
+                <option selected value="16">016</option>
+                <option value="11">011</option>
+                <option value="17">017</option>
+                <option value="18">018</option>
+            </select>
+            </div>
+            <div class="table">
+              <input class="input" id="minute" type="number" style=" width: 80%">
+            </div>
+            <div class="table">
+              <select id="package" class="select-css" aria-label="Default select example" style="width: 100%;">
+                <option selected value="30">FaleMais 30</option>
+                <option value="60">FaleMais 60</option>
+                <option value="120">FaleMais 120</option>
+            </select>
+            </div>
+          </div>
+        </div>
+        <div class="button">
+          <button id="myButtonId" onclick="catchData(
+        document.getElementById('origem').value,
+        document.getElementById('destination').value,
+        document.getElementById('minute').value,
+        document.getElementById('package').value
+     )">
+       Calcular Consumo
+     </button>
+        </div>
+        <div class="error">
+          <h3 id="errorMsg"></h3>
+        </div>
+        <div class="result">
+          <div class="row2">
+            <div class="table table-title">
+              <span> Com FaleMais</span>
+            </div>
+            <div class="table table-title">Sem FaleMais</div>
+          </div>
+          <div class="row2">
+            <div class="table">
+              <span id="withFaleMais" style="font-size: 30px;"></span>
+            </div>
+            <div class="table">
+              <span id="withoutFaleMais" style="font-size: 30px;"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+        <a class="footer-text" href="https://playlingo.s3.sa-east-1.amazonaws.com/Curriculum.pdf">Ed Angelis R Ribeiro: Junior Back-End/Front-end/Mobile Developer</a>
+    </footer>
+  </div>
+
+  
+    <script type="module" src="script.js"></script>
+</body>
+</html>

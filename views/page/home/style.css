@@ -1,0 +1,111 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #7159c1;
+}
+.container{
+    display: grid;
+    grid-template-rows: 20vh 70vh 10vh;
+}
+
+header {
+    display: grid;
+    justify-content: center;
+    align-content:center;
+}
+
+main{
+    display: grid;
+    background: white;
+    justify-items: center;
+    grid-gap: 5px;
+}
+
+footer{
+    display: grid;
+    justify-content: end;
+    align-content: center;
+    background-color: blueviolet;
+}
+.footer-text{
+    padding-right: 50px;
+    color: white;
+    font-family: 'Akaya Kanadaka';
+}
+
+.center{
+    display: grid;
+    width: 90%;
+    grid-template-rows: 30% 10% 10% 30%;
+}
+
+.row{
+    display: grid;
+    justify-content: center;
+    grid-gap: 5px;
+    grid-template-columns: 20% 20% 20% 40%;
+}
+
+.row2{
+    display: grid;
+    justify-content: center;
+    grid-gap: 5px;
+    grid-template-columns: 40% 40%;
+}
+
+.table{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.form{
+    display: grid;
+    grid-gap: 3px;
+    align-content: center;
+    grid-template-rows: 20% 20%;
+}
+.button{
+    display: grid;
+    justify-items: center;
+}
+
+#myButtonId {
+    background-color: #008CBA; /* Green */
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+.error{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    color: red;
+}
+.title{
+    display: grid;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Alatsi';
+}
+.result{
+    display: grid;
+    grid-template-rows: 30% 30%;
+    align-content: center;
+}
+
+.table-title{
+    font-family: 'Alatsi';
+}
+.img{
+    width: 100px;
+    height: 100px;
+}
